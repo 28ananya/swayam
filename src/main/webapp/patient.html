@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>StaffManagement</title>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet"> <!-- Google Fonts link -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"> <!-- Font Awesome for icons -->
+<style>
+  body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-image: url('https://www.freecodecamp.org/news/content/images/2022/09/jonatan-pie-3l3RwQdHRHg-unsplash.jpg'); /* Random background image from Unsplash */
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    overflow: hidden;
+  }
+
+  .container {
+    position: relative;
+    text-align: center;
+    padding-top: 20%;
+  }
+
+  h1 {
+    font-family: 'Roboto', sans-serif; /* Change font for scrolling text */
+    font-size: 3em;
+    margin: 0;
+    padding: 0;
+    animation: scrollText 10s linear infinite;
+    color: #ffffff; /* Initial font color */
+  }
+
+  @keyframes scrollText {
+    0% {
+      transform: translateY(0);
+      color: #ffffff; /* Initial font color */
+    }
+    50% {
+      color: #FFD700; /* Change font color at 50% scroll */
+    }
+    100% {
+      transform: translateY(-100%);
+      color: #00FF00; /* Change font color at 100% scroll */
+    }
+  }
+
+  .button-container {
+    margin-top: 50px;
+  }
+
+  .button {
+    display: inline-block;
+    padding: 15px 30px;
+    background-color: #4CAF50;
+    color: white;
+    font-size: 1.2em;
+    text-decoration: none;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    margin: 0 20px;
+    transform: translateY(50px);
+    opacity: 0;
+    animation: fadeInUp 2s ease-out forwards;
+  }
+
+  .button:hover {
+    background-color: #45a049;
+  }
+
+  .button:nth-of-type(2) {
+    animation-delay: 0.5s;
+  }
+
+  @keyframes fadeInUp {
+    0% {
+      transform: translateY(50px);
+      opacity: 0;
+    }
+    100% {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+</style>
+</head>
+<body>
+<div class="container">
+  <h1>WELCOME TO SWAYAMSWASTH<br><br>REGISTER ACCORDING THE DETAILS</h1>
+  
+  <div class="button-container">
+    <a href="pate.html" class="button">PATIENT <i class="fas fa-arrow-right"></i></a> <!-- Added right arrow icon to Button 1 -->
+    <a href="sta.html" class="button">STAFF<i class="fas fa-arrow-right"></i></a> <!-- Added right arrow icon to Button 2 -->
+  </div>
+</div>
+</body>
+</html>
